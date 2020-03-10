@@ -10,9 +10,12 @@ function ItemList() {
 
   return (
     <div className="ItemList">
+      <h2>Available Products</h2>
       {productIds.map(id => {
         let item = inventory[id];
-        return <Item key={id} id={id} item={item} />
+        return (
+          <Item key={id} id={id} item={item} />
+        )
       })}
     </div>
   )

@@ -18,6 +18,14 @@
     background-color: white;
     margin: 0px 15px 0px 0px;
 }
+.ItemDetail {
+    text-align: center;
+    margin: auto;
+}
+.ItemDetail-Image {
+    max-width: 50%;
+    margin: auto;
+}
 
 .Item-Name {
     text-transform: capitalize;

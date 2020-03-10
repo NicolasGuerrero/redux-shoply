@@ -11,7 +11,8 @@ const emptyCartState = {
       image_url: 'https://images.samsung.com/is/image/samsung/latin_en-hd-j4300ah-un32j4300ahxpa-001-front-indigo-blue'
     }
   },
-  cart: []
+  cart: [],
+  count: 0
 };
 
 const singleItemCart = {
@@ -25,7 +26,8 @@ const singleItemCart = {
       image_url: 'https://images.samsung.com/is/image/samsung/latin_en-hd-j4300ah-un32j4300ahxpa-001-front-indigo-blue'
     }
   },
-  cart: [{ id: '47314fa1-ae56-4eae-80be-af6691145951', qty: 1 }]
+  cart: [{ id: '47314fa1-ae56-4eae-80be-af6691145951', qty: 1 }],
+  count: 1
 };
 
 const twoItemCart = {
@@ -39,7 +41,8 @@ const twoItemCart = {
       image_url: 'https://images.samsung.com/is/image/samsung/latin_en-hd-j4300ah-un32j4300ahxpa-001-front-indigo-blue'
     }
   },
-  cart: [{ id: '47314fa1-ae56-4eae-80be-af6691145951', qty: 2 }]
+  cart: [{ id: '47314fa1-ae56-4eae-80be-af6691145951', qty: 2 }],
+  count: 2
 }
 
 describe('tests rootReducer ADD', () => {
