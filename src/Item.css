@@ -1,0 +1,35 @@
+.Item {
+    max-width: 400px;
+    margin: 10px auto 10px;
+    border-radius: 3px;
+    text-align: left;
+    background-color: #a6a8ab;
+    border: 0px solid transparent;
+}
+
+
+.ItemImage {
+    height: 100px;
+    width: 100px;
+    object-fit: scale-down;
+    float: left;
+    border: 1px solid grey;
+    border-radius: 2px;
+    background-color: white;
+    margin: 0px 15px 0px 0px;
+}
+
+.Item-Name {
+    text-transform: capitalize;
+    font-weight: bold;
+
+}
+
+.Item button {
+    z-index: 2;
+}
+
+.Item-Link {
+    text-decoration: none;
+}
+

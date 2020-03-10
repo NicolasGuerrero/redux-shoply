@@ -3,16 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import rootReducer from './rootReducer';
+import { BrowserRouter } from 'react-router-dom'
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__
+  && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </Provider>
   , document.getElementById('root'));
 

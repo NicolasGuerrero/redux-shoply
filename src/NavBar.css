@@ -1,0 +1,14 @@
+.Navbar {
+    background-color: white;
+    padding: 5px;
+    border-bottom: 2px solid lightgrey;
+    text-align: right;
+}
+
+.Nav {
+    text-align: right;
+}
+
+.Logo {
+float: left
+}

@@ -1,22 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { Nav, NavItem } from 'reactstrap';
+import './NavBar.css'
 
 function NavBar() {
-  const cart = useSelector(st => st.cart);
-  let [count, setCount] = useState(0);
-
-  useEffect(() => {
-    let newCount = 0;
-    cart.forEach(item => newCount += item.qty)
-    setCount(newCount);
-  }, [cart]);
+  const count = useSelector(st => st.count);
 
   return (
     <div className="Nav">
-      <Nav>
-        <NavItem>Cart: {count}</NavItem>
+      <Nav className="Navbar">
+        <NavLink to="/" className="Logo">
+          <NavItem>
+            Shoply
+          </NavItem>
+        </NavLink>
+        <div className="navigation">
+          <NavLink to="/">
+          <NavItem>Cart: {count}</NavItem>
+        </NavLink>
+        </div>
       </Nav>
     </div>
   )
